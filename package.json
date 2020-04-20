@@ -1,19 +1,23 @@
 {
-  "name": "abas",
+  "name": "node",
   "version": "1.0.0",
-  "description": "test",
-  "main": "a.js",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/node-devs/abas.git"
+    "url": "git+https://github.com/node-devs/Abas-yassir.git"
   },
-  "author": "abas",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/node-devs/abas/issues"
+    "url": "https://github.com/node-devs/Abas-yassir/issues"
   },
-  "homepage": "https://github.com/node-devs/abas#readme"
+  "homepage": "https://github.com/node-devs/Abas-yassir#readme"
 }
