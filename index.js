@@ -1,8 +1,8 @@
 const express = require("express")
 const app = express()
 
-app.get("/", function (req, res) {
-  res.send("welcom to world nodjs")
+app.get("/:name/:age", function (req, res) {
+  res.send("welcom to world nodjs" + req.params.name + "are you" + req.params.name)
 })
 
 app.listen(1234)
