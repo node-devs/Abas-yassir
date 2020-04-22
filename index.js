@@ -1,8 +1,19 @@
 const express = require("express")
 const app = express()
 
-app.get("/:name/:age", function (req, res) {
-  res.send("welcom to world nodjs" + req.params.name + "are you" + req.params.name)
+app.use(function (req, res, next) {
+  // ...
+  console.log(req.ip)
+  console.log(req.headers)
+  console.log(req.params)
+  console.log(req.hostname)
+  console.log(req.query)
+  console.log(req.protocol)
+  next()
+})
+
+app.get("/books", function (req, res) {
+  res.json("books data in object")
 })
 
 app.listen(1234)
